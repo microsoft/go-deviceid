@@ -1,14 +1,23 @@
-# Project
+# Device ID for Go
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+`deviceid` provides a device ID for a given system, based on the `DevDeviceId` specification.
 
-As the maintainer of this project, please make a few updates:
+## Installation
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+`go get github.com/microsoft/go-deviceid`
+
+## Usage
+
+```golang
+import deviceid "github.com/microsoft/go-deviceid"
+
+deviceId, err := deviceid.Get()
+if err != nil {
+  // handle error
+}
+
+fmt.Println("Device ID is: ", deviceId)
+```
 
 ## Contributing
 
