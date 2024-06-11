@@ -1,0 +1,20 @@
+{
+    "tsaVersion": "TsaV2",
+    "codebase": "NewOrUpdate",
+    "codebaseName": "go-deviceid",
+    "tsaStamp": "DevDiv",
+    "tsaEnvironment": "PROD",
+    "notificationAliases": [
+        "vstelinstr@microsoft.com"
+    ],
+    "codebaseAdmins": [
+        "REDMOND\\rdawson",
+        "REDMOND\\piel"
+    ],
+    "instanceUrl": "https://devdiv.visualstudio.com",
+    "projectName": "DevDiv",
+    "areaPath": "DevDiv\\Technical Insights\\Telemetry API",
+    "iterationPath": "DevDiv",
+    "alltools": true,
+    "repositoryName": "go-deviceid"
+}
