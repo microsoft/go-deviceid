@@ -27,7 +27,7 @@ extends:
   # The pipeline extends the 1ES PT which will inject different SDL and compliance tasks.
   # For non-production pipelines, use "Unofficial" as defined below.
   # For productions pipelines, use "Official".
-  template: /azure-pipelines/MicroBuild.1ES.Official.Publish.yml@MicroBuildTemplate
+  template: /azure-pipelines/MicroBuild.1ES.Official.yml@MicroBuildTemplate
   parameters:
     customBuildTags:
     - Ignore-Tag
@@ -47,6 +47,7 @@ extends:
           inputs:
             command: test
             arguments: '-v .'
+            workingDirectory: 
 
         - task: TSAUpload@2
           inputs:
