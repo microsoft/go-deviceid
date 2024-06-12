@@ -43,7 +43,8 @@ extends:
 
         steps:
         - task: GoTool@0
-          displayName: 'Use Go 1.10'
+          version: 1.22.0
+          displayName: 'Use Go 1.22.0'
 
         - task: Go@0
           inputs:
