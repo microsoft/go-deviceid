@@ -43,14 +43,15 @@ extends:
 
         steps:
         - task: GoTool@0
-          version: 1.22.0
+          inputs:
+            version: 1.22.0
           displayName: 'Use Go 1.22.0'
 
         - task: Go@0
           inputs:
             command: test
             arguments: '-v .'
-            workingDirectory: 
+          displayName: Run Tests
 
         - task: TSAUpload@2
           inputs:
