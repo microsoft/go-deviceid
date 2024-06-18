@@ -65,8 +65,9 @@ extends:
 
         # Because there is no build and no build scanning is enabled, there are no TSA files to upload.
         # Commenting this out for now.
-        # - task: TSAUpload@2
-        #   inputs:
-        #     GdnPublishTsaOnboard: true
-        #     GdnPublishTsaConfigFile: '$(Build.SourcesDirectory)/.config/TSAOptions.json'
-        #   displayName: 'TSA upload to Codebase (go-deviceid)'
+        - task: TSAUpload@2
+          inputs:
+            GdnPublishTsaOnboard: true
+            GdnPublishTsaConfigFile: '$(Build.SourcesDirectory)/.config/TSAOptions.json'
+          continueOnError: true
+          displayName: 'TSA upload to Codebase (go-deviceid)'
