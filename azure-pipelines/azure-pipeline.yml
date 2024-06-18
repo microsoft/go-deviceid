@@ -49,6 +49,16 @@ extends:
 
         - task: Go@0
           inputs:
+            command: 'get'
+            arguments: '-d'
+
+        - task: Go@0
+          inputs:
+            command: 'build'
+            arguments: '-a'
+
+        - task: Go@0
+          inputs:
             command: test
             arguments: '-v .'
           displayName: Run Tests
