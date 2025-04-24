@@ -1,0 +1,15 @@
+# Documentation for branch policy: https://aka.ms/gim/docs/policy/branch-protection
+# This is for legacy branch policies to satisfy SDL requirements.
+name: SDL
+description: Required branch policies for SDL
+resource: repository
+where: 
+configuration:
+  branchProtectionRules:
+    - branchNamePattern: "main"
+      requiredApprovingReviewsCount: 1
+      requireCodeOwnersReview: true
+      requireLastPushApproval: true
+      requiresConversationResolution: true
+      dismissStaleReviews: true
+      isAdminEnforced: true
